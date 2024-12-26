@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/depademo/static/css/main.7fc2464e.css",
+    "main.js": "/depademo/static/js/main.9a2fcbec.js",
+    "static/js/453.cc9aa787.chunk.js": "/depademo/static/js/453.cc9aa787.chunk.js",
+    "static/media/proto_logo.png": "/depademo/static/media/proto_logo.669516be1b9f8fb81d92.png",
+    "static/media/search.png": "/depademo/static/media/search.9faa75b2ba9524cc3257.png",
+    "index.html": "/depademo/index.html",
+    "main.7fc2464e.css.map": "/depademo/static/css/main.7fc2464e.css.map",
+    "main.9a2fcbec.js.map": "/depademo/static/js/main.9a2fcbec.js.map",
+    "453.cc9aa787.chunk.js.map": "/depademo/static/js/453.cc9aa787.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7fc2464e.css",
+    "static/js/main.9a2fcbec.js"
+  ]
+}
