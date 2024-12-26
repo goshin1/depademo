@@ -1,0 +1,52 @@
+#loginDiv{
+    margin: 5% auto;
+    width: 25%;
+    min-height: 600px;
+    height: 100%;
+    border: 1px solid rgb(0, 205, 255);
+    border-radius: 15px;
+}
+
+#loginLogo{
+    margin: 20px auto;
+    width: 50%;
+    cursor: pointer;
+    display: block;
+}
+
+#loginDiv input{
+    display: block;
+}
+
+#loginId, #loginPwd {
+    margin: 30px auto;
+    width: 80%;
+    line-height: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    text-indent: 10px;
+    border: none;
+    border-bottom: 1px solid rgb(48,48,48);
+}
+
+#loginDiv input[type=button]{
+    margin: 20px auto;
+    width: 65%;
+    height: 50px;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255,255,255);
+    background-color: rgb(48,48,48);
+    transition: all 0.2s;
+}
+
+#loginDiv input[type=button]:active{
+    font-size: 25px;
+}
+
+
+
+
+

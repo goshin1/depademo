@@ -1,0 +1,668 @@
+/* 왼쪽 영역 */
+#mainDiv{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #f7f7f7;
+}
+
+#projects{
+    margin: 20px;
+    width: 10%;
+    height: 90%;
+    min-height: 550px;
+    float: left;
+}
+
+.project{
+    margin: 20px auto;
+    width:60%;
+    height: auto;
+    min-height: 50px;
+    line-height: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
+    text-align: center;
+    font-size: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    word-break: break-all;
+    background-color: rgb(255,255,255);
+}
+
+#testP{
+    margin: 30px 30%;
+    width: 300px;
+    height: 300px;
+    border: 1px solid block;
+    background-color: greenyellow;
+    position: absolute;
+    z-index: 3;
+}
+
+
+/* 가운데 영역 */
+
+#mainInfo{
+    margin: 20px 0px;
+    width: 65%;
+    min-height: 550px;
+    height: 90%;
+    overflow: hidden;
+    float: left;
+    border-radius: 25px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
+    background-color: rgb(255,255,255);
+    position: relative;
+}
+
+#mainHeader{
+    width: 100%;
+    min-height: 70px;
+    height: 10%;
+}
+
+#mainLogo{
+    margin: 10px 20px 0px 30px;
+    width: 8%;
+    display: block;
+    float: left;
+}
+
+#addCal{
+    width: 100px;
+    margin: 40px 10px 10px;
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+    color: rgb(255,255,255);
+    background-color: rgb(48, 48, 48);
+    transition: all 0.2s;
+}
+
+#addCal:active{
+    font-size: 15px;
+}
+
+#selMonth{
+    margin: 40px 50px;
+    float: right;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.monthBtn{
+    margin : 0px 20px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    color: rgb(255,255,255);
+    background-color: rgb(48, 48, 48);
+    font-size: 25px;
+}
+
+#mainCalender{
+    margin-top: 50px;
+}
+
+#mainCalender > table, th, td{
+    border: 1px solid rgb(48, 48, 48);
+    border-collapse: collapse;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#mainCalender > table{
+    margin: 10px auto;
+    width: 95%;
+    height: 100%;
+    min-height: 550px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 0 2px rgb(48, 48, 48);
+}
+
+#mainCalender td{
+    text-indent: 10px;
+    line-height: -50px;
+}
+
+/* 팝업 */
+#mainRemote{
+    width: 100%;
+    border-radius: 25px;
+    position: absolute;
+    z-index: 1;
+    transition: all 0.2s;
+    overflow: hidden;
+    background-color: rgb(255,255,255);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
+}
+
+/* 일정 추가 */
+#mainAddCal{
+    margin: 50px auto;
+    width: 80%;
+    min-height: 400px;
+    text-align: center;
+    border: 2px solid rgb(48, 48, 48);
+    border-radius: 25px;
+}
+
+#cancelBtn{
+    margin: 10px 48%;
+    width: 80px;
+    height: 40px;
+    font-size: 18px;
+    color: rgb(255,255,255);
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(48, 48, 48);
+    transition: all 0.2s;
+    clear: both;
+}
+
+#cancelBtn:active{
+    font-size: 20px;
+}
+
+#calTitle{
+    margin : 0px 10px;
+    width: 40%;
+    height: 25px;
+    font-size: 20px;
+    text-indent: 10px;
+    border: none;
+    border-bottom: 2px solid rgb(48, 48, 48);
+}
+
+#calBtn{
+    width: 60px;
+    height: 35px;
+    border: none;
+    background-color: rgb(48, 48, 48);
+    color: rgb(255,255,255);
+    transition: all 0.2s;
+    border-radius: 10px;
+}
+
+#calBtn:active{
+    font-size: 14px;
+}
+
+#days{
+    margin: 10px auto;
+    height: 30px;
+    width: 50%;
+}
+
+.dayBlock{
+    margin : 10px;
+    width: 45%;
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.dayBlock input{
+    margin-left: 20px;
+}
+
+#mainAddCal textarea{
+    clear: both;
+    display: block;
+}
+
+#calContent{
+    display: block;
+    margin: 20px auto;
+    width: 50%;
+    min-height: 150px;
+    border : none;
+    border-radius: 20px;
+    background-color: rgb(245, 245, 245);
+    text-indent: 10px;
+    line-height: 30px;
+}
+
+
+/* 오른쪽 영역 */
+#mainSetting{
+    margin : 20px;
+    width: 15%;
+    height: 90%;
+    min-height: 550px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
+    background-color: rgb(255,255,255);
+    float: left;
+}
+
+#profile{
+    margin: 20px auto;
+    width: 80%;
+    height: 35%;
+    border: 2px solid rgb(48, 48, 48);
+    border-radius: 25px;
+}
+
+#profile div{
+    margin : 15px auto 0px;
+    text-align: center;
+}
+
+#profileImg{
+    width: 80%;
+    height: 65%;
+    border-radius: 25px;
+    background-color: rgb(226, 226, 226);
+}
+
+#setting{
+    margin : 155% 5px 0px 0px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    float: right;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0);
+    background-size: 40px;
+    background-image: url("../imgs/setting.png");
+}
+
+/* 내가 안 한 부분 */
+#SetIcon{
+    width: 100%;
+}
+
+#ProfileMainSet{
+    border: 1.5px solid rgb(48, 48, 48);
+    border-radius: 25px;
+    height: 400px;
+    margin-left: 5%;
+    margin-top: 5%;
+    width:90%;
+    top: 10%;
+    right: 51%;
+    text-align: center;
+    object-fit: cover;
+    font-size: 20px;
+    text-indent: 10px;
+}
+
+#SettingPasswd{
+    margin : 10px 10px;
+    width: 40%;
+    height: 25px;
+    font-size: 20px;
+    text-indent: 10px;
+    border: none;
+    border-bottom: 2px solid rgb(48, 48, 48);
+    text-align: center;
+}
+
+#SettingPwd{
+    width: 60px;
+    height: 35px;
+    border: none;
+    background-color: rgb(48, 48, 48);
+    color: rgb(255,255,255);
+    transition: all 0.2s;
+    border-radius: 10px;
+}
+
+#ProfileName{
+    margin : 10px 10px;
+    width: 40%;
+    height: 25px;
+    font-size: 20px;
+    text-indent: 10px;
+    border: none;
+    border-bottom: 2px solid rgb(48, 48, 48);
+    text-align: center;
+    font-size: 20px;
+}
+
+#ProfileSetting{
+    margin-top: 20px;
+    margin-left: 5%;
+    width:55%;
+    height: 500px;
+    float: left;
+    
+}
+
+#ProfileSet1{
+    margin-left: 40px;
+    width: 40%;
+    float: left;
+        /* padding-right: 800px;
+        text-align: right; */
+}
+
+#ProfileSet2{
+    float: left;
+    width: 50%;
+    height: 150px;
+    /* margin-top: 50px;
+    padding-right: 500px; */
+    text-align: right;
+}
+
+#ProfileTema{
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 0%;
+    float: left;
+    width: 35%;
+    height: 500px;
+}
+
+.logoutBtn{
+    margin: 20px auto;
+    display: block;
+    width: 65px;
+    height: 25px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(48, 48, 48);
+    border-radius: 5px;
+    border: none;
+}
+
+
+#RadioWhite{
+    font-size: 50px;
+}
+
+/* 프로젝트 생성 */
+
+#mainAddNew{
+    width: 100%;
+    height: 530px;
+}
+
+#joinProject{
+    border: 1.5px solid rgb(48, 48, 48);
+    border-radius: 25px;
+    height: 400px;
+    position: absolute;
+    width: 44%;
+    top: 10%;
+    right: 51%;
+    text-align: center;
+    object-fit: cover;
+}
+
+#projectIcon{
+    object-fit: cover;
+}
+
+#ProjectSet{
+    border: 1.5px solid rgb(48, 48, 48);
+    border-radius: 25px;
+    height: 400px;
+    width: 44%;
+    position: absolute;
+    top: 10%;
+    left: 51%;
+    text-align: center;
+}
+/* 프로젝트 생성 */
+
+#ProjectAdd{
+    width: 100px;
+    margin: 40px 10px 10px;
+    border: none;
+    height: 30px;
+    color: rgb(255,255,255);
+    background-color: rgb(48, 48, 48);
+    transition: all 0.2s;
+    height: 140px;
+    width: 140px;
+    border-radius: 100px;
+    text-align: center;
+}
+
+/* 프로젝트 생성코드 기입란 */
+
+#ProjectCode{
+    margin : 0px 10px;
+    width: 40%;
+    height: 25px;
+    font-size: 20px;
+    text-indent: 10px;
+    border: none;
+    border-bottom: 2px solid rgb(48, 48, 48);
+    text-align: center;
+}
+
+/* 프로젝트 생성코드 추가 */
+
+#CodeBtn{
+    width: 60px;
+    height: 35px;
+    border: none;
+    background-color: rgb(48, 48, 48);
+    color: rgb(255,255,255);
+    transition: all 0.2s;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/*프로젝트 참가 설정*/
+
+#addCal{
+    width: 100px;
+    margin: 40px 10px 10px;
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+    color: rgb(255,255,255);
+    background-color: rgb(48, 48, 48);
+    transition: all 0.2s;
+}
+
+/* 프로젝트 설정 코드 */
+
+#ProjectSetCode, #ProjectSetComment{
+    margin : 0px 10px;
+    width: 40%;
+    height: 25px;
+    font-size: 20px;
+    text-indent: 10px;
+    border: none;
+    border-bottom: 2px solid rgb(48, 48, 48);
+}
+
+/* 프로젝트 설정 코드 확인버튼 */
+
+#SetBtn{
+    width: 60px;
+    height: 35px;
+    border: none;
+    background-color: rgb(48, 48, 48);
+    color: rgb(255,255,255);
+    transition: all 0.2s;
+    border-radius: 10px;
+}
+
+/* 프로젝트 이름 기입란 */
+#ProjectSetName{
+    margin : 0px 10px;
+    width: 40%;
+    height: 25px;
+    font-size: 20px;
+    text-indent: 10px;
+    border: none;
+    border-bottom: 2px solid rgb(48, 48, 48);
+}
+
+/* 프로젝트 이름 기입란 확인버튼*/
+
+#NameBtn{
+    width: 60px;
+    height: 35px;
+    border: none;
+    background-color: rgb(48, 48, 48);
+    color: rgb(255,255,255);
+    transition: all 0.2s;
+    border-radius: 10px;
+}
+
+#mainAddNew img{
+    margin: 20px auto;
+    width: 100%;
+    max-width: 100px;
+    display: block;
+
+}
+
+#SetProject {
+    width: 100%;
+}
+
+#SetProject input[type=text] {
+    margin: 25px 20px 0px;
+    float: left;
+    width: 65%;
+    clear: both;
+}
+
+/* 프로젝트 탈퇴 */
+#RemoveMain{
+    margin: 50px auto;
+    width: 80%;
+    min-height: 400px;
+    text-align: center;
+    border: 2px solid rgb(48, 48, 48);
+    border-radius: 25px;
+}
+
+#RemoveExplain{
+    margin-top: 80px;
+    height: 100%;
+    /* background-color: black; */
+}
+
+#ProjectWrite{
+    margin : 10px 10px;
+    width: 40%;
+    height: 25px;
+    font-size: 20px;
+    text-indent: 10px;
+    border: none;
+    border-bottom: 1px solid rgb(48, 48, 48);
+    text-align: center;
+}
+
+#RemoveBtn{
+    width: 60px;
+    height: 35px;
+    border: none;
+    background-color: rgba(230, 34, 34, 0.932);
+    color: rgb(255,255,255);
+    transition: all 0.2s;
+    border-radius: 10px;
+}
+
+/* 추가 */
+.ProfileName{
+    font-size: 15px;
+    border: 1.5px solid rgb(48, 48, 48);
+    border-radius: 5px;
+    float: right;
+    margin-right: 15px;
+    padding-top: 0%;
+    height: 30px;
+
+}
+
+#SetIcon{
+    text-align: center;
+}
+
+#ProfileSetting{
+    border: 1.5px solid #303030;
+    border-radius: 25px;
+    height: 500px;
+    width: 55%;
+    margin: 20px auto;
+}
+
+#Info{
+    margin: 60px 0px;
+    font-size: 20px;
+
+}
+
+#ProfileSet{
+    width: 100%;
+}
+
+#ProfileSet1{
+    overflow: hidden;
+    height: 400px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 50%;
+    float: left;
+    text-align: left;
+    text-indent: 10px;
+    
+    
+}
+
+#ProfileSet2{
+    overflow: hidden;
+    height: 400px;
+    margin:0px;
+    padding-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 50%;
+    float: left;
+
+
+}
+
+#ProfileTema{
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 0%;
+    float: left;
+    width: 25%;
+    height: 500px;
+    text-align: center;
+    border: 1.5px solid rgb(48, 48, 48);
+    border-radius: 25px;
+}
+
+#TemaWhite{
+    border: 2px rgb(black);
+    background-color: rgb(255, 255, 255);
+    color: black(255,255,255);
+    border-radius: 10px;
+    size: 50px;
+    padding: 20px 50px;
+}
+
+#White{
+    height: 10px;
+    margin-top: 100px;
+}
+
+#black{
+    margin-top: 100px;
+}
+
+#TemaBlack{
+    border: 2px rgb(rgb(255, 255, 255));
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    size: 50px;
+    padding: 20px 50px;
+}

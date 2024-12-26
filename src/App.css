@@ -1,0 +1,18 @@
+input[type=button], img{
+  cursor: pointer;
+}
+
+#widthApp{
+  width: 100%;
+  min-width: 1080px;
+}
+
+.App{
+  width: 100%;
+  min-width: 1080px;
+}
+
+#root{
+  width: 100%;
+  min-width: 600px;
+}

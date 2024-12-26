@@ -1,0 +1,797 @@
+/* 왼쪽 영역 */
+#mainDiv{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #f7f7f7;
+}
+
+#chattings{
+    margin: 20px;
+    width: 10%;
+    height: 90%;
+    min-height: 550px;
+    float: left;
+}
+
+.chatRoom{
+    margin: 20px auto;
+    padding-bottom: 10px;
+    width:80%;
+    line-height: 60px;
+    min-height: 60px;
+    border-radius : 15px;
+    box-shadow: 0px 0px 5px rgba(58, 50, 50, 0.35);
+    text-align: center;
+    font-size: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    word-break: break-all;
+    background-color: rgb(255,255,255);
+}
+
+.editRoomBtn{
+    margin: 0px auto;
+    width: 50px;
+    height: 30px;
+    background-color: rgb(48, 48, 48);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    display: block;
+}
+
+/* 가운데 영역 */
+
+#mainInfo{
+    margin: 20px 0px;
+    width: 65%;
+    min-height: 550px;
+    height: 90%;
+    overflow: hidden;
+    float: left;
+    border-radius: 25px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
+    background-color: rgb(255,255,255);
+    position: relative;
+}
+
+#mainHeader{
+    width: 100%;
+    min-height: 70px;
+    height: 10%;
+}
+
+#mainHeader img{
+    margin: 10px 20px 0px 30px;
+    width: 8%;
+    display: block;
+    float: left;
+}
+
+/* 프로젝트 진입 시 처음보는 공지사항 */
+#mainContent{
+    width: 100%;
+    height: 100%;
+}
+
+#mainNotice{
+    margin: 5% auto;
+    width: 90%;
+    height: 90%;
+}
+
+#mainNotice pre{
+    width: 100%;
+    height: 100%;
+    white-space: pre-wrap;
+}
+
+/* 채팅방 관련 */
+#chatList{
+    display: flex;
+    flex-direction: column-reverse;
+    height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    width: 95%;
+}
+
+.chatBlock{
+    margin: 20px auto;
+    background-color: #ebfdeb;
+    border-radius: 20px;
+    height: auto;
+    padding: 10px;
+    width: 80%;
+    float: left;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
+}
+
+.chatContent{
+    margin-top: 10px;
+    word-break: break-all;
+    white-space: normal;
+    margin-right: 10px;
+    width: 85%;
+    position: relative;
+    float: right;
+}
+
+.chatContent pre{
+    white-space: normal;
+}
+
+.chatContent img{
+    width: 80%;
+}
+
+.chatIcon{
+    margin: 10px;
+    width: 8%;
+    text-align: center;
+    position: relative;
+    float: left;
+}
+  
+.chatIcon img{
+    width: 100%;
+    display: block;
+}
+
+#chatInsert{
+    bottom: 0;
+    position: fixed;
+    width: 65%;
+    height: 10vh;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
+}
+
+#chatText{
+    margin: 30px 2% 0px 5%;
+    width: 80%;
+    height: 4vh;
+    display: block;
+    float: left;
+    border: 1px solid rgb(48, 48, 48);
+    border-radius: 5px;
+    text-indent: 15px;
+    font-size: 18px;
+}
+
+#chatBtns{
+    margin-top: 30px;
+    width: 10%;
+    height: 4vh;
+    border: 1px solid rgb(48, 48, 48);
+    border-radius: 5px;
+    float: left;
+    text-align: center;
+}
+
+.chatBtn{
+    margin: 5px 2% 0px;
+    width: 28%;
+    height: 3vh;
+    background-color: rgb(48, 48, 48);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    transition: all 0.2s;
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#enterBtn{
+    background-image: url(../imgs/enter.png);
+}
+
+#pCalBtn{
+    background-image: url(../imgs/calender.png);
+}
+
+#uploadBtn{
+    background-image: url(../imgs/upload.png);
+}
+
+
+/* 팝업 */
+
+#mainRemote{
+    width: 100%;
+    border-radius: 25px;
+    position: absolute;
+    z-index: 1;
+    transition: all 0.2s;
+    overflow: hidden;
+    background-color: rgb(255,255,255);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
+}
+
+.popupBorder{
+    margin: 50px auto;
+    width: 80%;
+    min-height: 400px;
+    height: 70%;
+    text-align: center;
+    border: 2px solid rgb(48, 48, 48);
+    border-radius: 25px;
+}
+
+/* 회의실 생성 */
+.underInput{
+    width: 60%;
+    height: 30px;
+    font-size: 25px;
+    border: none;
+    border-bottom: 2px solid rgb(48, 48, 48);
+}
+
+.uploadImage{
+    margin: 20px auto;
+    width: 60%;
+    min-height: 150px;
+    border-radius: 15px;
+    background-color: rgb(240, 240, 240);
+    position: relative;
+}
+
+.uploadInfo{
+    margin: 0px auto;
+    width: 100%;
+    height: 30px;
+}
+
+.popupBtns{
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+}
+
+.popupBtns input{
+    margin-top: 10px;
+    width: 25%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.cancleBtn{
+    background-color: rgb(255,0,0);
+    float: left;
+}
+
+.addBtn{
+    background-color: rgb(48, 48, 48);
+    float: right;
+}
+
+
+
+/* 회의실 환경설정 */
+.settingPopup{
+    margin: 50px auto;
+    width: 80%;
+    min-height: 400px;
+    height: 70%;
+    text-align: center;
+}
+
+.settingList{
+    width: 40%;
+    height: 100%;
+    border: 1px solid rgb(48, 48, 48);
+    border-radius: 15px;
+}
+
+.listBlocks{
+    margin: 10px auto;
+    width: 95%;
+    height: 80%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.listBlock{
+    margin : 10px auto 0px;
+    width: 90%;
+    height: 10%;
+    overflow: visible;
+    border-radius: 15px;
+    border: 1px solid rgb(48, 48, 48);
+    transition: all 0.2s;
+}
+
+.blockName{
+    width: 100%;
+    height: 100%;
+    line-height: 185%;
+    font-size: 120%;
+    font-weight: bold;
+    text-align: left;
+    text-indent: 10px;
+}
+
+.blockDetail{
+    margin: 1px auto;
+    width: 85%;
+    background-color: rgb(240, 240, 240);
+    height: 0%;
+    font-size: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: all 0.2s;
+}
+
+.blockDetail>div{
+    width: 100%;
+    height: 20%;
+    line-height: 180%;
+    text-align: left;
+    text-indent: 10px;
+}
+
+
+/* 달력 */
+
+#projectCalenderBtns{
+    margin: 10px 30px;
+}
+
+#projectCalenderBtns input[type=button]{
+    margin : 0px 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(48, 48, 48);
+}
+
+#projectCalender > table, #projectCalender > th, #projectCalender > td{
+    border: 1px solid rgb(48, 48, 48);
+    border-collapse: collapse;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+
+
+#projectCalender > table{
+    table-layout:fixed;
+    margin: 10px auto;
+    width: 95%;
+    height: 100%;
+    min-height: 550px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 0 2px rgb(48, 48, 48);
+}
+
+#projectCalender td{
+    text-indent: 10px;
+    position: relative;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* 일정 목록 */
+
+#listDate{
+    margin: 50px 15%;
+    width: 70%;
+    height: auto;
+    min-height: 450px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
+    position: absolute;
+    z-index: 1;
+}
+
+#listDate > div{
+    margin: 10px auto;
+    width: 90%;
+}
+
+#listHeader{
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#listHeader input[type=button]{
+    margin-top: 10px;
+    width: 60px;
+    height: 30px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(48, 48, 48);
+    float: right;
+    border-radius: 5px;
+}
+
+#listDateBlocks{
+    margin-top: 30px;
+    height: 320px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.listDateBlock{
+    margin : 20px 0px;
+    width: 100%;
+    min-height: 80px;
+    border-radius: 10px;
+    background-color: rgb(240, 240, 240);
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+
+.listDateBlock > div{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    text-indent: 10px;
+}
+
+.dateSummary{
+    width: 24%;
+    float: left;
+}
+
+.dateCreate{
+    width : 71%;
+    margin-right : 5%;
+    text-align: right;
+    font-size: 12px;
+    float: right;
+}
+
+#listRemote{
+    text-align: center;
+}
+
+#listRemote input[type=button]{
+    margin-top: 20px;
+    width: 60px;
+    height: 30px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(48, 48, 48);
+    border-radius: 5px;
+}
+
+
+/* 일정 생성 */
+#alarmCalender{
+    margin: 75px 20%;
+    width: 60%;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
+    position: absolute;
+    z-index: 2;
+}
+
+#alarmCalender > h3, #alarmCalender > input,
+#alarmCalender > textarea, #alarmCalender > div{
+    display: block;
+    margin: 15px auto 0px;
+}
+
+#alarmCalender > h3{
+    text-align: center;
+}
+
+#alarmCalender > input[type=text]{
+    width: 70%;
+    height: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(240, 240, 240);
+}
+
+#alarmDate{
+    text-align: center;
+}
+
+#alarmDate > input{
+    margin : 0px 20px;
+}
+
+#alarmCalender > textarea{
+    width: 70%;
+    height: 100px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(240, 240, 240);
+    resize: none;
+}
+
+#alarmCalender input[type=button]{
+    margin: 0px 16.6%;
+    width: 16%;
+    height: 30px;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(48, 48, 48);
+}
+
+.alarmNum{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: orange;
+}
+
+.scheduleBlock{
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: orange;
+    text-indent: 0px;
+    text-align: center;
+    opacity: 0;
+}
+
+#cancelBtn{
+    margin: 10px 48%;
+    width: 80px;
+    height: 40px;
+    font-size: 18px;
+    color: rgb(255,255,255);
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(48, 48, 48);
+    transition: all 0.2s;
+    clear: both;
+}
+
+#cancelBtn:active{
+    font-size: 20px;
+}
+
+/* 일정 게시글 */
+#detailTitle, #detailContent{
+    width: 100%;
+    font-weight: bold;
+}
+
+#detailContent{
+    margin: 20px auto;
+    padding: 5%;
+    width: 90%;
+    height: 150px;
+    word-wrap: break-word;
+    overflow-y: auto;
+    background-color: rgb(240, 240, 240);
+    border-radius: 15px;
+
+}
+
+.dateFile{
+    display: inline-block;
+    float: right;
+}
+
+#commentList{
+    width: 100%;
+    height: 100px;
+    overflow-y: auto;
+    position: relative;
+}
+
+#commentInsert{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+}
+
+#commentInsert input[type=text]{
+    width:80%;
+    height: 20px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+    display: block;
+    border: none;
+    float: left;
+}
+
+#commentInsert input[type=button]{
+    width: 15%;
+    height: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(48, 48, 48);
+    color: rgb(255, 255, 255);
+    float: right;
+}
+
+#dateBlockDetail{
+    position: relative;
+}
+
+.commentBlock{
+    margin : 10px 0;
+    width: 100%;
+    min-height: 40px;
+    word-break: break-all;
+    white-space: normal;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(48, 48, 48);
+}
+
+.commentDeleteBtn{
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(255,0,0);
+    color: rgb(255, 255, 255);
+    float: right;
+}
+
+
+/* 오른쪽 영역 */
+#mainSession{
+    margin : 20px;
+    width: 15%;
+    height: 90%;
+    min-height: 550px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
+    background-color: rgb(255,255,255);
+    float: left;
+}
+
+#memberList{
+    width: 100%;
+    height: 90%;
+}
+
+.memberBlock{
+    margin: 20px auto;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.memberIcon{
+    margin: 10px 10px 10px 20px;
+    width:10%;
+    float: left;
+}
+
+.memberIcon img{
+    width: 100%;
+}
+
+
+/* 멤버 세부정보 */
+#memberInfo{
+    margin: 20px auto;
+    width: 30%;
+    height: 380px;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+}
+
+#memberInfo img{
+    margin : 20px auto;
+    max-height: 200px;
+    width: 50%;
+    display: block;
+}
+
+#memberInfo p{
+    text-indent: 10px;
+}
+
+#memberInfo div{
+    margin : 20px auto;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+
+#memberInfo input[type=text]{
+    width: 60%;
+    float: right;
+    margin-right: 10px;
+}
+
+#memberInfo select{
+    float: right;
+    margin-right: 10px;
+}
+
+#memberInfo input[type=button]{
+    margin: 10px 5px;
+    width: 50px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(48, 48, 48);
+    color: rgb(255, 255, 255);
+}
+
+#setting{
+    margin : 8% 5px 0px 0px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    float: right;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0);
+    background-size: 40px;
+    background-image: url("../imgs/setting.png");
+}
+
+
+/* 방 수정 */
+#editRooms{
+    margin: 20px auto;
+    width: 50%;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+}
+
+#editRooms h3{
+    padding-top :  30px;
+    margin: 40px auto;
+    width: 100%;
+    text-align: center;
+}
+
+#editRooms div{
+    width: 90%;
+    margin: 20px auto;
+    text-indent: 10px;
+}
+
+#editTitleInsert{
+    text-align: left;
+}
+
+#editBtns{
+    text-align: center;
+}
+
+#editRooms input[type=text]{
+    border : none;
+    border-bottom: 1px solid rgb(48,48,48);
+    width: 60%;
+    height : 20px;
+    margin-right: 10px;
+    float: right;
+}
+
+#editRooms input[type=button]{
+    margin : 20px 5px;
+    width: 50px;
+    height: 25px;
+    background-color: rgb(48, 48, 48);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+}

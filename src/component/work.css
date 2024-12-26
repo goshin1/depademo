@@ -1,0 +1,195 @@
+#workMain{
+  max-height: 600px;
+}
+
+#workMain h2{
+  margin-left: 20px;
+}
+
+#taskForm{
+  margin : 0px 5%;
+  padding-bottom: 10px;
+  width: 90%;
+  min-height: 220px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(58, 50, 50, 0.35);
+}
+
+#editTaskForm{
+  overflow-x: none;
+}
+
+.checkP{
+  margin: 5%;
+  text-indent: 10px;
+  height: 20px;
+}
+
+.workMemberCheck{
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  float: right;
+}
+
+
+#taskForm input[type=text], #taskForm textarea, #taskForm input[type=datetime-local],
+#editTaskForm input[type=text], #editTaskForm textarea, #editTaskForm input[type=datetime-local]{
+  margin: 10px 5%;
+  width: 90%;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(240, 240, 240);
+  height: 20px;
+  display: block;
+}
+
+#taskForm textarea, #editTaskForm textarea{
+  resize: none;
+  height: 100px;
+}
+
+#taskForm h3, #editTaskForm h3{
+  padding-top: 10px;
+  margin: 10px 5px;
+  width: 90%;
+  height: 20px;
+  line-height: 30px;
+  text-indent: 10px;
+}
+
+#taskForm input[type=file], #editTaskForm input[file=type]{
+  height: 30px;
+}
+
+#taskForm > input[type=submit], #editTaskForm input[type=submit]{
+  margin: 10px 5%;
+  background-color: red;
+  display: block;
+}
+
+.taskFormBtn{
+  background-color: rgba(48,48,48);
+  color: rgb(255,255,255);
+  height: 25px;
+  border : none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* board */
+#cardBoard{
+  margin : 5%;
+  width: 90%;
+  height: 150px;
+  overflow-x: none;
+  overflow-y: auto;
+}
+
+.workMember{
+  margin: 5%;
+  width: 80%;
+  height: 50px;
+  overflow: hidden;
+  background-color: rgb(255,255,255);
+  box-shadow: 0px 0px 5px rgba(58, 50, 50, 0.35);
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.workMember h3{
+  text-indent: 10px;
+  margin-top: 15px;
+  height: 50px;
+}
+
+.workMemberCheck{
+  margin-right: 10px;
+  float: right;
+}
+
+.card {
+    padding: 10px;
+    margin: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(58, 50, 50, 0.35);
+    word-break: break-all;
+    white-space: normal;
+}
+
+
+.card button{
+  margin: 0px 5px;
+  padding : 0px 5px;
+  height: 25px;
+  border: none;
+  cursor: pointer;
+  color: rgb(255,255,255);
+  border-radius: 5px;
+  background-color: rgba(48,48,48);
+}
+
+
+/* Modal */
+.task-details{
+  position: absolute;
+  width : 330px;
+  max-height : 600px; 
+  overflow-y : auto; 
+  overflow-x: none; 
+  top: 5%; 
+  left: 35%; 
+  background: #fff; 
+  padding: 10px; 
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(58, 50, 50, 0.35);
+  z-index: 10; 
+}
+
+.task-details p{
+  width: 100%;
+  word-break: break-all;
+  white-space: normal;
+}
+
+.taskStatus{
+  margin-right: 10px;
+  float: right;
+}
+
+.taskDescription{
+  text-indent: 10px;
+  background-color: rgb(240, 240, 240);
+  height: 200px;
+  overflow-x: none;
+  overflow-y: auto;
+  border-radius: 10px;
+}
+
+.taskBtn{
+  margin: 10px;
+  height: 25px;
+  color: rgb(255,255,255);
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(48,48,48);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.taskBtn:hover{
+  background-color: rgb(0, 205, 255);
+}
+
+.rejected {
+    background-color: #ffdddd; /* 반려된 업무에 대한 색상 */
+    border-color: #ff0000;
+}
+  
+.rejection-notice {
+    color: #ff0000;
+    font-weight: bold;
+}
+  
+  
